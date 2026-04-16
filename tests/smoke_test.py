@@ -26,5 +26,7 @@ def test_logout_btn(page):
 def patient_text(page):
      expect(page.locator("//*[@id='dataContainer']")).to_contain_text()
 
+def logout_btn(page):
+     page.locator(".btn-logout").click()
 
 time.sleep(5)
